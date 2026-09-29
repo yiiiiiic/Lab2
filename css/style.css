@@ -1,1 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    flex-basis: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.bio-hero {
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+}
